@@ -12,6 +12,7 @@ import tensorflow as tf
 st.set_page_config(page_title="Milk Production Forecast", layout="centered")
 
 st.title("📈 Milk Production Forecasting using GRU")
+st.subheader("Developed by Yashvi Vekariya")
 
 # Upload CSV
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
@@ -76,3 +77,6 @@ if uploaded_file:
     df.plot(ax=ax, label="Actual", legend=True)
     forecast_df.plot(ax=ax, label="Forecast", legend=True)
     st.pyplot(fig)
+
+
+st.markdown("Developed by Yashvi Vekariya")
